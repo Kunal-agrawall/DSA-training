@@ -1,3 +1,219 @@
+'''Write a Python program to display the current date and time. 
+Sample Output :
+Current date and time : 2014-07-05 14:34:14  '''
+
+
+# from datetime import datetime
+
+# now = datetime.now()
+
+# formatted_time = now.strftime("%Y-%m-%d %H:%M:%S")
+
+# print("Current date and time : " + formatted_time)
+
+# //////////////////////////////////////////////////////////////////
+
+'''Write a Python program that calculates the area of a circle based on the radius entered by the user. Sample Output :
+r = 1.1
+Area = 3.8013271108436504'''
+
+# radius = float(input("Enter the radius of the circle : "))
+# area = 3.14 * radius ** 2
+# print("Area =", area)
+
+# //////////////////////////////////////////////////////////////////
+
+# Write a Python program that accepts the user's first and last name and prints them in reverse order with a space between them.
+
+# first_name = input("Enter your first name : ")
+
+# last_name = input("Enter your last name : ")
+
+# print(last_name + " " + first_name)
+
+# ///////////////////////////////////////////////////////////////////////////
+# Write a Python program to display the first and last colors from the following list.
+
+# color_list = ["Red","Green","White" ,"Black"]
+
+# print(color_list[0])
+# print(color_list[-1])
+
+# ///////////////////////////////////////////////////////////////////////////
+
+# Write a Python program to calculate the sum of three given numbers. If the values are equal, return three times their sum.
+
+# a = 5
+# b = 5
+# c = 5
+
+# if a == b == c:
+#     result = 3 * (a + b + c) 
+# else:
+#     result = a + b + c  
+
+# print("Result:", result)
+
+# ///////////////////////////////////////////////////////////////////////////
+
+# Write a Python function to find the maximum of three numbers.
+
+# def find_max(a, b, c):
+#     if a > b and a > c:
+#         return a
+#     elif b > a and b > c:
+#         return b
+#     else:
+#         return c
+    
+# print(find_max(5, 10, 3))  # Output: 10
+# print(find_max(15, 20, 10))  # Output: 20
+# print(find_max(7, 7, 7))    # Output: 7
+
+# SECOND METHOD
+# def maximum_of_three(a, b, c):
+#     return max(a, b, c)
+
+# # Example usage
+# print(maximum_of_three(10, 20, 30))  # Output: 30
+
+# ///////////////////////////////////////////////////////////////////////////
+
+'''Write a Python function to sum all the numbers in a list.
+Sample List : (8, 2, 3, 0, 7)
+Expected Output : 20
+'''
+
+# def sum_num(n):
+#     total = 0
+#     for i in n:
+#         total += i
+#     return total
+
+# print(sum_num((8, 2, 3, 0, 7)))  # Output: 20
+
+# SECOND METHOD
+# def sum_of_list(numbers):
+#     return sum(numbers)
+
+# # Example usage
+# sample_list = [8, 2, 3, 0, 7]
+# print(sum_of_list(sample_list))  # Output: 20
+
+# ///////////////////////////////////////////////////////////////////////////
+
+'''Write a Python function to multiply all the numbers in a list.
+Sample List : (8, 2, 3, -1, 7)
+Expected Output : -336'''
+
+# def multiply_num(n):
+#     result = 1
+#     for i in n:
+#         result *= i
+#     return result
+
+# print(multiply_num((8, 2, 3, -1, 7)))  # Output: -336
+
+# ///////////////////////////////////////////////////////////////////////////
+
+'''Write a Python function that takes a list and returns a new list with distinct elements from the first list.
+Sample List : [1,2,3,3,3,3,4,5]
+Unique List : [1, 2, 3, 4, 5]'''
+
+# def unique_list(n):
+#     return list(set(n))
+
+# print(unique_list([1,2,3,3,3,3,4,5]))  # Output: [1, 2, 3, 4, 5]
+
+# ///////////////////////////////////////////////////////////////////////////
+
+'''Write a Python program to print the even numbers from a given list.
+Sample List : [1, 2, 3, 4, 5, 6, 7, 8, 9]
+Expected Result : [2, 4, 6, 8]'''
+
+# def print_even_numbers(n):
+#     for i in n:
+#         if i % 2 == 0:
+#             print(i)
+
+# print_even_numbers([1, 2, 3, 4, 5, 6, 7, 8, 9])  # Output: 2 4 6 8
+
+# SECOND METHOD
+
+# def even_numbers(lst):
+#     return [num for num in lst if num % 2 == 0]
+
+# ///////////////////////////////////////////////////////////////////////////
+
+'''Write a Python function to check whether a number is "Perfect" or not.
+According to Wikipedia : In number theory, a perfect number is a positive integer that is equal to the sum of its proper positive divisors, 
+that is, the sum of its positive divisors excluding the number itself (also known as its aliquot sum). 
+Equivalently, a perfect number is a number that is half the sum of all of its positive divisors (including itself).
+Example : The first perfect number is 6, because 1, 2, and 3 are its proper positive divisors, and 1 + 2 + 3 = 6. 
+Equivalently, the number 6 is equal to half the sum of all its positive divisors: ( 1 + 2 + 3 + 6 ) / 2 = 6. 
+The next perfect number is 28 = 1 + 2 + 4 + 7 + 14. This is followed by the perfect numbers 496 and 8128.'''
+
+# def is_perfect(n):
+#     sum= 0
+#     for i in range(1, n):
+#         if n % i == 0:
+#             sum += i
+#     return sum == n
+
+# print(is_perfect(6))  # Output: True
+
+# SECOND METHOD
+
+# def is_perfect_number(num):
+#     divisors = [i for i in range(1, num) if num % i == 0]
+#     if sum(divisors) == num:
+#         return True
+#     return False
+
+# # Example usage
+# print(is_perfect_number(6))  # Output: True (6 is a perfect number)
+# print(is_perfect_number(28)) # Output: True (28 is a perfect number)
+# print(is_perfect_number(10)) # Output: False (10 is not a perfect number)
+
+# ///////////////////////////////////////////////////////////////////////////
+
+'''Write a Python program that accepts a hyphen-separated sequence of words as input and prints the words in a hyphen-separated sequence after sorting them alphabetically.
+Sample Items : green-red-yellow-black-white
+Expected Result : black-green-red-white-yellow'''
+
+# def sort_words(n):
+    # words = n.split('-')
+    # words.sort()
+    # return '-'.join(words)
+
+# print(sort_words('green-red-yellow-black-white'))  # Output: black-green-red-white-yellow
+
+# ///////////////////////////////////////////////////////////////////////////
+
+'''Write a Python program that invokes a function after a specified period of time.
+Sample Output:
+Square root after specific milliseconds:
+4.0
+10.0
+158.42979517754858
+'''
+
+# import time
+# import math
+
+# def print_square_root():
+#     print(math.sqrt(16))  # Square root of 16 is 4.0
+
+# def delayed_function():
+#     time.sleep(2)  # Delay for 2 seconds
+#     print_square_root()
+
+# # Example usage
+# delayed_function()  # Output after 2 seconds: 4.0
+# # You can adjust the time.sleep() parameter to control the delay.
+
+# ///////////////////////////////////////////////////////////////////////////
+
 # Sort a list of tuples by the first element in each tuple.
 # Sample List: [(5, 1), (2, 4), (3, 3), (1, 2)]
 
@@ -432,3 +648,147 @@ Given a list and a tuple, write a Python program to count how many times the ele
 # print("Frequency:", result)
 
 # ////////////////////////////////////////////////////////////////////////////////
+
+'''Write a Python program to create a class representing a Circle. 
+Include methods to calculate its area and perimeter.'''
+
+# class Circle:
+#     def __init__(self, radius):
+#         self.radius = radius
+#     def calculate_area(self):
+#         return 3.14 * self.radius ** 2
+#     def calculate_perimeter(self):
+#         return 2 * 3.14 * self.radius
+    
+# circle = Circle(5)
+# area = circle.calculate_area()
+# perimeter = circle.calculate_perimeter()
+# print("Area:", area)
+# print("Perimeter:", perimeter)
+
+# ///////////////////////////////////////////////////////////////////////////
+
+'''Write a Python program to create a person class. Include attributes like name, country and date of birth. 
+Implement a method'' to determine the person's age'''
+
+# class Person:
+#     def __init__(self, name, country, date_of_birth):
+#         self.name = name
+#         self.country = country
+#         self.date_of_birth = date_of_birth
+#     def calculate_age(self):
+#         from datetime import datetime
+#         today = datetime.now()
+#         birth_date = datetime.strptime(self.date_of_birth, '%Y-%m-%d')
+#         age = today.year - birth_date.year
+#         if today.month < birth_date.month or (today.month == birth_date.month and today.day < birth_date.day):
+#             age -= 1
+#         return age
+    
+# person = Person("Kunal", "India", "2004-05-23")
+# age = person.calculate_age()
+# print(f"Name: {person.name}")
+# print(f"Country: {person.country}")
+# print(f"Date of Birth: {person.date_of_birth}")
+# print(f"Age: {age}")
+
+# ///////////////////////////////////////////////////////////////////////////
+
+'''Write a Python program to create a class that represents a shape. Include methods to calculate its area and perimeter. 
+Implement subclasses for different shapes like circle, triangle, and square.
+'''
+# class Shape:
+#     def area(self):
+#         pass
+    
+#     def perimeter(self):
+#         pass
+
+# class Circle(Shape):
+#     def __init__(self, r): self.r = r
+#     def area(self): return (22/7) * self.r ** 2
+#     def perimeter(self): return 2 * (22/7) * self.r
+
+# class Square(Shape):
+#     def __init__(self, s): self.s = s
+#     def area(self): return self.s ** 2
+#     def perimeter(self): return 4 * self.s
+
+# class Triangle(Shape):
+#     def __init__(self, a, b, c): self.a, self.b, self.c = a, b, c
+#     def area(self): s = (self.a + self.b + self.c) / 2; return (s * (s - self.a) * (s - self.b) * (s - self.c)) ** 0.5
+#     def perimeter(self): return self.a + self.b + self.c
+
+# # Example usage
+# for shape in [Circle(5), Square(4), Triangle(3, 4, 5)]:
+#     print(f"{shape.__class__.__name__}: Area = {shape.area():.2f}, Perimeter = {shape.perimeter():.2f}")
+
+# ///////////////////////////////////////////////////////////////////////////
+
+'''Write a Python program to create a class representing a shopping cart. 
+Include methods for adding and removing items, and calculating the total price.'''
+
+# class ShoppingCart:
+#     def __init__(self):
+#         self.items = {}
+    
+#     def add_item(self, name, price, quantity=1):
+#         if name in self.items:
+#             self.items[name]['quantity'] += quantity
+#         else:
+#             self.items[name] = {'price': price, 'quantity': quantity}
+    
+#     def remove_item(self, name, quantity=1):
+#         if name in self.items:
+#             if self.items[name]['quantity'] > quantity:
+#                 self.items[name]['quantity'] -= quantity
+#             else:
+#                 del self.items[name]
+    
+#     def total_price(self):
+#         return sum(item['price'] * item['quantity'] for item in self.items.values())
+
+#     def show_cart(self):
+#         if not self.items:
+#             return "The cart is empty."
+#         return '\n'.join(f"{name}: {data['quantity']} x ${data['price']}" for name, data in self.items.items())
+
+# # Example usage
+# cart = ShoppingCart()
+# cart.add_item("Apple", 1.5, 3)
+# cart.add_item("Banana", 0.75, 2)
+# cart.remove_item("Apple", 1)
+# print(cart.show_cart())
+# print(f"Total Price: ${cart.total_price():.2f}")
+
+# ///////////////////////////////////////////////////////////////////////////
+
+'''Write a Python program to create a class representing a bank. 
+Include methods for managing customer accounts and transactions.'''
+
+# class Bank:
+#     def __init__(self): self.accounts = {}
+#     def create_account(self, name, balance=0):
+#         if name in self.accounts: return "Account exists."
+#         self.accounts[name] = balance
+#         return f"Account created for {name}."
+#     def deposit(self, name, amount):
+#         if name not in self.accounts: return "Account not found."
+#         self.accounts[name] += amount
+#         return f"Deposited ${amount} to {name}."
+#     def withdraw(self, name, amount):
+#         if name not in self.accounts: return "Account not found."
+#         if self.accounts[name] < amount: return "Insufficient balance."
+#         self.accounts[name] -= amount
+#         return f"Withdrew ${amount} from {name}."
+#     def get_balance(self, name):
+#         return f"{name}'s balance: ${self.accounts.get(name, 'Account not found.')}"
+
+# # Example usage
+# bank = Bank()
+# print(bank.create_account("Kunal", 1000))
+# print(bank.deposit("Kunal", 500))
+# print(bank.withdraw("Kunal", 200))
+# print(bank.get_balance("Kunal"))
+
+# ///////////////////////////////////////////////////////////////////////////
