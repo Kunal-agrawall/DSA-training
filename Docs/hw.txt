@@ -1,0 +1,11 @@
+1. get student name: 05
+student name 1
+student name 2
+student name 3
+student name 4
+student name 5
+
+2. get 5 subjects mark of each students:
+total marks and percentage
+then select label
+then show topper among them
