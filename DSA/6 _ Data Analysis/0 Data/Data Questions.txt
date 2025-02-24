@@ -1,0 +1,4 @@
+What is Data Science?
+What is Data Analysis?
+What is Data? Types of Data?
+In The following dataset of sanitized products, find data type of each column?

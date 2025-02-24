@@ -1,0 +1,28 @@
+Practice Questions Set 1:
+1. Reverse String without slicing.
+2. Fibonacci
+3. Factorial
+4. Palindrome
+5. Prime Number
+6. Binary Search
+7. Duplicates in list 
+8. 1 to n missing number 
+9. Sum of numbers
+10. 2nd Largest Number
+11. Reverse Array
+12. Implement Insertion Sort, and Optimized Bubble Sort.
+13. Rotate Array
+14. Shift all zeros in array to right side.
+15. Find Missing Number in Array
+16. Find Kth smallest element
+17. Count Frequency of all distinct values in array or string
+18. Find common elements in 3 sorted array
+19. Find two numbers with target sum.
+20. Find first repeating element.
+21. Longest Common substring
+22. Remove duplicates, without using set()
+23. Implement basic Linked List (you may skip this one)
+24. Given an array, find triplets such that sum of 2 numbers will result an another element in the array.
+25. Find Perfect numbers
+26. Apply GCD by Recursion
+27. Find all possible subsets of an array or string

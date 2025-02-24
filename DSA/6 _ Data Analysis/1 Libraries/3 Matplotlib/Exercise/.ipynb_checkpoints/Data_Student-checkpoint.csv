@@ -1,0 +1,25 @@
+name,roll no.,exam_id,fees,marks,percentage,result
+ayushi,11,1,10k,80,70%,passed
+aditya,12,2,11k,81,71%,passed
+dev,13,,13k,,,failed
+ansh,14,,14k,,77%,passed
+harsh,,,15k,,,failed
+varun,16,6,20k,78,88%,passed
+tyga,17,7,8k,50,55%,failed
+gunjan,18,8,7k,45,50%,failed
+gagan,19,9,50k,95,99%,passed
+bhargav,20,10,40k,30,40%,failed
+satyendra,21,11,35k,,NA,NA
+pragya,22,12,6k,55,45%,failed
+seinfeld,23,13,77k,56,76%,passed
+seoul,,,,,,
+tom,24,15,,,,
+jhanvi,25,16,25k,10,23%,failed
+sara,26,,55k,78,80%,passed
+mintu,27,,,,,failed
+devansh,,19,50k,67,,failed
+,,,20k,,,
+chintu,30,21,,78,67%,passed
+monty,31,22,,,,
+deepika,32,23,45k,67,50%,failed
+deepak,33,24,5k,5,10%,failed

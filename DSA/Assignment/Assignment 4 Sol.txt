@@ -1,0 +1,79 @@
+1. Python function to find the maximum of three numbers:
+
+def maximum_of_three(a, b, c):
+    return max(a, b, c)
+
+# Example usage
+print(maximum_of_three(10, 20, 30))  # Output: 30
+2. Python function to sum all the numbers in a list:
+
+def sum_of_list(numbers):
+    return sum(numbers)
+
+# Example usage
+sample_list = [8, 2, 3, 0, 7]
+print(sum_of_list(sample_list))  # Output: 20
+3. Python function to multiply all the numbers in a list:
+
+def multiply_of_list(numbers):
+    result = 1
+    for num in numbers:
+        result *= num
+    return result
+
+# Example usage
+sample_list = [8, 2, 3, -1, 7]
+print(multiply_of_list(sample_list))  # Output: -336
+4. Python function to return a list with distinct elements from the first list:
+
+def distinct_elements(lst):
+    return list(set(lst))
+
+# Example usage
+sample_list = [1, 2, 3, 3, 3, 3, 4, 5]
+print(distinct_elements(sample_list))  # Output: [1, 2, 3, 4, 5]
+5. Python program to print the even numbers from a given list:
+
+def even_numbers(lst):
+    return [num for num in lst if num % 2 == 0]
+
+# Example usage
+sample_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(even_numbers(sample_list))  # Output: [2, 4, 6, 8]
+6. Python function to check whether a number is "Perfect" or not:
+
+def is_perfect_number(num):
+    divisors = [i for i in range(1, num) if num % i == 0]
+    if sum(divisors) == num:
+        return True
+    return False
+
+# Example usage
+print(is_perfect_number(6))  # Output: True (6 is a perfect number)
+print(is_perfect_number(28)) # Output: True (28 is a perfect number)
+print(is_perfect_number(10)) # Output: False (10 is not a perfect number)
+7. Python program to sort words alphabetically from a hyphen-separated sequence:
+
+def sort_hyphen_sequence(sequence):
+    words = sequence.split('-')
+    words.sort()
+    return '-'.join(words)
+
+# Example usage
+sample_sequence = "green-red-yellow-black-white"
+print(sort_hyphen_sequence(sample_sequence))  # Output: black-green-red-white-yellow
+8. Python program to invoke a function after a specified period of time:
+
+import time
+import math
+
+def print_square_root():
+    print(math.sqrt(16))  # Square root of 16 is 4.0
+
+def delayed_function():
+    time.sleep(2)  # Delay for 2 seconds
+    print_square_root()
+
+# Example usage
+delayed_function()  # Output after 2 seconds: 4.0
+You can adjust the time.sleep() parameter to control the delay.

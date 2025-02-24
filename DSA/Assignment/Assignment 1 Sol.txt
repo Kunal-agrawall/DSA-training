@@ -1,0 +1,63 @@
+1. What is Python?*
+
+* *Definition:* A high-level, versatile programming language known for its readability.
+* *Key Features:* 
+    * Readable syntax with significant indentation.
+    * Dynamically typed (no need to declare variable types).
+    * Garbage-collected (automatic memory management).
+    * Supports multiple programming paradigms.
+* *Real-time Examples:*
+    * *Web Development:* Instagram, Spotify
+    * *Data Science:* Research, industry analysis
+    * *Automation:* Automated emails, web scraping
+    * *Game Development:* Indie games, prototyping
+    * *Desktop GUI:* Simple utilities, complex software
+
+2. What is data science?*
+
+* *Definition:*  Extracting knowledge and insights from data using scientific methods and algorithms.
+* *Key Concepts:*
+    * Combines statistics, computer science, and domain expertise.
+    * Deals with both structured and unstructured data.
+* *Real-life/Business Applications:*
+    * *Personalized Recommendations:* E-commerce product suggestions.
+    * *Fraud Detection:* Identifying suspicious transactions.
+    * *Medical Diagnosis:* Analyzing medical images.
+    * *Predictive Maintenance:* Forecasting equipment failure.
+    * *Marketing Optimization:* Targeting campaigns effectively.
+
+3. What is data analytics?*
+
+* *Definition:* Examining raw data to draw conclusions and support decision-making.
+* *Key Processes:*
+    * Inspecting, cleaning, transforming, and modeling data.
+   Examples:
+       Sales Analysis:* Identifying top-selling products.
+       Website Analytics:* Tracking website traffic.
+       Customer Segmentation:* Grouping customers.
+       Financial Analysis:* Identifying investment opportunities.
+       Healthcare Analytics:* Improving treatment outcomes. 
+
+4. Types of data analytics:
+
+   Descriptive Analytics:* Summarizes past data.
+    * *Example:*  Sales report for last quarter.
+   Diagnostic Analytics:*  Investigates why something happened.
+    * *Example:* Analyzing reasons for product sales decline.
+   Predictive Analytics:* Forecasts future outcomes.
+    * *Example:* Predicting customer churn.
+   Prescriptive Analytics:* Recommends actions to optimize outcomes.
+    * *Example:* Personalized product recommendations.
+
+5. What is machine learning?
+
+ *Definition:*  Allows computers to learn from data without explicit programming.
+ *Key Concepts:*
+    * Uses algorithms to identify patterns and make predictions.
+    * Improves performance over time with more data.
+ *Real-life Examples:*
+    * *Spam Filters:* Identifying unwanted emails.
+    * *Recommendation Engines:* Suggesting movies or songs.
+    * *Image Recognition:* Identifying people in photos.
+    * *Natural Language Processing:* Understanding voice commands.
+    * *Self-Driving Cars:* Autonomous navigation.

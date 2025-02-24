@@ -1,0 +1,60 @@
+WELCOME TO SNAZZY AUTOS !!! 
+
+Are you interested to buy car?
+                 Type 1 for: 'Yes' and type 2 for 'No'
+                   1
+
+Which car model are you interested to buy?
+                             MODEL       PRICE 
+                          1. Hatchback  Rs. 5.35 lakh 
+                          2. Saloon     Rs. 4.95 lakh 
+                          3. Estate     Rs. 6.25 lakh
+             
+ Type 1 for 'Hatchback',2 for 'Saloon' and 3 for 'Estate'.  
+                        
+2
+
+Which add-on feature are you interested to use?
+                                OPTIONAL EXTRA              PRICE 
+                            1.Set of luxury seats          Rs 45000 
+                            2.Satellite navigation         Rs 5500 
+                            3.Parking sensors              Rs 10000 
+                            4.Bluetooth connectivity       Rs 350 
+                            5.Sound system                 Rs 1000 
+             
+ Type 1 for 'Set of luxury seats',2 for 'Satellite navigation',
+                3 for 'Parking sensors',4 for 'Bluetooth connectivity',5 for 'Sound system' and 6 for 'none'
+                     
+2
+
+Are you an existing member?
+             Type 1 for: Yes(Eligible for 10% discount) and 2 for: No(Eligible for 5% discount)
+1
+
+Do you have an old car for exchange?
+                 Type 1 for Yes and 2 for No
+1
+
+Enter the value of old car:
+
+Note-'The value of car evaluated after depreciation lies in the range of Rs10,000-Rs1,00,000'
+50000
+
+Please enter your payment option.
+             Type 1 for 'Full Amount at 1% cashback'
+             Type 2 for 'Equal monthly payments for four years at no charge'
+             Type 3 for 'Equal monthly payments over a period of seven years at a surcharge of 5% on total price 
+                         of the car'
+2
+
+The model of the car is ' Saloon ',worth Rs 495000 with add-on feature of ' Satellite navigation ',worth Rs 5500 .
+                 
+The total value of the car is Rs 400450.0 .
+The option of payment choosen is ' Equal monthly payments for four years at no charge '.Net amount to be paid is Rs 400450.0 .
+                 
+Number of installments(in months) and amount of each installemt is 48 months and Rs 8342.708333333334 respectively.
+                 
+The amount of cashback is Rs 0 .
+
+Thank you for your time!!!
+gauravsa.tech@gmail.com

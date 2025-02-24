@@ -1,0 +1,82 @@
+Solution 01-
+print("Twinkle, twinkle, little star, \n\tHow I wonder what you are! \n\t\tUp above the world so high, \n\t\tLike a diamond in the sky. \nTwinkle, twinkle, little star, \n\tHow I wonder what you are!")
+
+Solution 02-
+# Import the 'datetime' module to work with date and time
+import datetime
+
+# Get the current date and time
+now = datetime.datetime.now()
+
+# Create a datetime object representing the current date and time
+
+# Display a message indicating what is being printed
+print("Current date and time : ")
+
+# Print the current date and time in a specific format
+print(now.strftime("%Y-%m-%d %H:%M:%S"))
+
+# Use the 'strftime' method to format the datetime object as a string with the desired format
+
+Solution 03-
+# Import the 'pi' constant from the 'math' module to calculate the area of a circle
+from math import pi
+
+# Prompt the user to input the radius of the circle
+r = float(input("Input the radius of the circle : "))
+
+# Calculate the area of the circle using the formula: area = π * r^2
+area = pi * r ** 2
+
+# Display the result, including the radius and calculated area
+print("The area of the circle with radius " + str(r) + " is: " + str(area))
+
+
+Solution 04-
+# Create a list called 'color_list' containing color names
+color_list = ["Red", "Green", "White", "Black"]
+# Print the first and last elements of the 'color_list' using string formatting
+# The '%s' placeholders are filled with the values of 'color_list[0]' (Red) and 'color_list[-1]' (Black)
+print("%s %s" % (color_list[0], color_list[-1]))
+
+
+Solution 05-
+# Define a function named "sum_thrice" that takes three integer parameters: x, y, and z
+def sum_thrice(x, y, z):
+    # Calculate the sum of x, y, and z
+    sum = x + y + z
+
+    # Check if x, y, and z are all equal (all three numbers are the same)
+    if x == y == z:
+        # If they are equal, triple the sum
+        sum = sum * 3
+
+    # Return the final sum
+    return sum
+
+# Call the "sum_thrice" function with the arguments (1, 2, 3) and print the result
+print(sum_thrice(1, 2, 3))
+
+# Call the "sum_thrice" function with the arguments (3, 3, 3) and print the result
+print(sum_thrice(3, 3, 3))
+
+
+Solution06
+# Prompt the user to input their first name and store it in the 'fname' variable
+fname = input("Input your First Name : ")
+
+# Prompt the user to input their last name and store it in the 'lname' variable
+lname = input("Input your Last Name : ")
+
+# Display a greeting message with the last name followed by the first name
+print("Hello  " + lname + " " + fname)
+
+
+Solution 07-
+# Use triple double-quotes to create a multi-line string
+print("""
+a string that you "don't" have to escape
+This
+is a  ....... multi-line
+heredoc string --------> example
+""")
