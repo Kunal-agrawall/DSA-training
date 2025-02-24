@@ -53,11 +53,3 @@ plt.show()
 
 print(type(student.name))
 print(type(student.marks))
-
-
-
-
-
-
-
-
