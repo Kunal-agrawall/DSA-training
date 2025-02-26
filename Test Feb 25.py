@@ -10,3 +10,5 @@ titanic = sns.load_dataset('titanic')
 # Check for null values
 myNull = titanic.isnull().sum()
 # print(myNull)
+
+print(titanic[titanic["age"].isnull()])
