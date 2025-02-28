@@ -12,3 +12,4 @@ myNull = titanic.isnull().sum()
 # print(myNull)
 
 print(titanic[titanic["age"].isnull()])
+1
