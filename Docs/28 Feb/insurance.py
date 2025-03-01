@@ -4,6 +4,10 @@ import warnings # Ignore warnings
 import seaborn as sns #plots
 import matplotlib.pyplot as plt # plots
 
-# Load the dataset
+df = pd.read_csv('insurance.csv')
+# print(df.head())
 
-data = pd.read_csv('insurance.csv')
+# print({col:list(df[col].unique()) for col in df.select_dtypes("object")})
+# for col in df.select_dtypes("int"):
+#     print(col)
+
