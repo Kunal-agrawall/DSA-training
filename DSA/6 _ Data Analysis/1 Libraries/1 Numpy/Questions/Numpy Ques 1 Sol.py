@@ -1,6 +1,6 @@
 import numpy as np
 
-# Q!
+# Q1
 a = [12.23, 13.32, 100, 36.32]
 arr = np.array(a)
 
