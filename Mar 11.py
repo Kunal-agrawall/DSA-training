@@ -112,3 +112,27 @@ that returns True if input string is valid, and False otherwise.
 # print(is_valid_parentheses("[{}]")) 
 
 # //////////////////////////////////////////////////////////////////
+'''
+Reverse a string using stack
+Write a function reverse_string(s: str) -> str
+that takes a string s as input and returns a new string with the characters reversed.
+
+print(reverse_string("hello"))  # Output: "olleh"
+print(reverse_string("world"))  # Output: "dlrow"
+print(reverse_string("Python")) # Output: "nohtyP
+'''
+
+def reverse_string(s: str) -> str:
+    stack = []
+    
+    for char in s:
+        stack.append(char)
+    reversed_s = ""
+
+    while stack:
+        reversed_s += stack.pop()
+    return reversed_s
+
+print(reverse_string("hello"))  
+print(reverse_string("world"))  
+print(reverse_string("Python")) 
