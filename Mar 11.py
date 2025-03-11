@@ -122,17 +122,45 @@ print(reverse_string("world"))  # Output: "dlrow"
 print(reverse_string("Python")) # Output: "nohtyP
 '''
 
-def reverse_string(s: str) -> str:
-    stack = []
+# def reverse_string(s: str) -> str:
+#     stack = []
     
-    for char in s:
-        stack.append(char)
-    reversed_s = ""
+#     for char in s:
+#         stack.append(char)
+#     reversed_s = ""
 
-    while stack:
-        reversed_s += stack.pop()
-    return reversed_s
+#     while stack:
+#         reversed_s += stack.pop()
+#     return reversed_s
 
-print(reverse_string("hello"))  
-print(reverse_string("world"))  
-print(reverse_string("Python")) 
+# print(reverse_string("hello"))  
+# print(reverse_string("world"))  
+# print(reverse_string("Python")) 
+
+
+#  Queue
+
+from collections import deque
+
+class Queue:
+    def __init__(self):
+        self.queue = deque()
+
+    def enqueue(self, data):
+        self.queue.append(data)
+
+    def dequeue(self):
+        if not self.is_empty():
+            return self.queue.popleft()
+        return "Queue is empty"
+    
+    def is_empty(self):
+        return len(self.queue) == 0
+    
+    def size(self):
+        return len(self.queue)
+    
+q= Queue()
+q.enqueue(5)
+q.enqueue(15)
+print(q.dequeue())
