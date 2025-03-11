@@ -73,25 +73,42 @@
 Write a function is_valid_parentheses(s: string) -> bool 
 that returns True if input string is valid, and False otherwise.
 '''
-def is_valid_parentheses(s: str) -> bool:
-    stack = []
+# def is_valid_parentheses(s: str) -> bool:
+#     stack = []
     
-    for char in s:
-        if char in "({[":
-            stack.append(char)
-        else:
-            if not stack:
-                return False
-            if (char == ")" and stack[-1] == "(") or \
-               (char == "]" and stack[-1] == "[") or \
-               (char == "}" and stack[-1] == "{"):
-                stack.pop()
-            else:
-                return False
+#     for char in s:
+#         if char in "({[":
+#             stack.append(char)
+#         else:
+#             if not stack:
+#                 return False
+#             if (char == ")" and stack[-1] == "(") or \
+#                (char == "]" and stack[-1] == "[") or \
+#                (char == "}" and stack[-1] == "{"):
+#                 stack.pop()
+#             else:
+#                 return False
 
-    return not stack
+#     return not stack
+
+# from collections import deque
+
+# def is_valid_parentheses(s):
+#     stack = deque()
+#     mapping = {')': '(', ']': '[', '}': '{'}
+
+#     for char in s:
+#         if char in mapping:
+#             top_element = stack.pop()
+#             if top_element!= mapping[char]:
+#                 return 'false'   
+#         else:
+#             stack.append(char)
+#     return 'true' if not stack else 'false'
 
 
-print(is_valid_parentheses("{[]}")) 
-print(is_valid_parentheses("([)]")) 
-print(is_valid_parentheses("[{}]")) 
+# print(is_valid_parentheses("{[]}")) 
+# print(is_valid_parentheses("([)]")) 
+# print(is_valid_parentheses("[{}]")) 
+
+# //////////////////////////////////////////////////////////////////
