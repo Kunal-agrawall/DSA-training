@@ -133,12 +133,3 @@ elif payment_method == 2:
         print(f"Monthly Payment: Rs. {monthly_payment}")
         print("Thank you for visiting Our Restaurant!")
         exit()
-
-
-#  Now We have to generate a pdf file containing the invoice
-'''
-invoice number
-customer name
-customer email-id
-customer contact number
-'''
