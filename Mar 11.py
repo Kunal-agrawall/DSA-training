@@ -140,27 +140,117 @@ print(reverse_string("Python")) # Output: "nohtyP
 
 #  Queue
 
-from collections import deque
+# from collections import deque
 
-class Queue:
+# class Queue:
+#     def __init__(self):
+#         self.queue = deque()
+
+#     def enqueue(self, data):
+#         self.queue.append(data)
+
+#     def dequeue(self):
+#         if not self.is_empty():
+#             return self.queue.popleft()
+#         return "Queue is empty"
+    
+#     def is_empty(self):
+#         return len(self.queue) == 0
+    
+#     def size(self):
+#         return len(self.queue)
+    
+# q= Queue()
+# q.enqueue(5)
+# q.enqueue(15)
+# print(q.dequeue())
+
+# ///////////////////////////////////////////////////////////////////////////
+# Customers are entering in a bank. Add 5 customers.
+# They can avail any service either deposit or withdraw. Also get the entering time of the customers.
+
+# from collections import deque
+# import random
+# import time
+
+# class Customer:
+#     def __init__(self, name, service_type):
+#         self.name = name
+#         self.service_type = service_type
+#         self.entry_time = time.strftime('%H:%M:%S', time.localtime())
+
+#     def __str__(self):
+#         return f"{self.name} ({self.service_type}) - Entered at {self.entry_time}"
+
+# class BankQueue:
+#     def __init__(self):
+#         self.customers = deque()
+
+#     def add_customer(self, customer):
+#         self.customers.append(customer)
+#         print(f'{customer} entered the bank.')
+
+#     def serve_customer(self):
+#         if self.customers:
+#             customer = self.customers.popleft()
+#             print(f'Serving {customer.name} ({customer.service_type})...')
+#             time.sleep(random.randint(1, 3))  
+#             print(f'{customer.name} has completed the service and left the bank.')
+#         else:
+#             print('No customers in the queue.')
+
+# if __name__ == "__main__":
+#     bank_queue = BankQueue()
+
+#     service_types = ["Deposit", "Withdrawal"]
+#     for i in range(1, 6):
+#         customer = Customer(f"Customer{i}", random.choice(service_types))
+#         bank_queue.add_customer(customer)
+#         time.sleep(1)
+
+#     print("\n--- Serving Customers ---\n")
+#     while bank_queue.customers:
+#         bank_queue.serve_customer()
+
+
+# ///////////////////////////////////////////////////////////////
+
+from collections import deque
+import time
+
+class Customer:
+    def __init__(self, name, service_type):
+        self.name = name
+        self.service_type = service_type
+        self.entry_time = time.strftime('%H:%M:%S', time.localtime())
+
+class BankQueue:
     def __init__(self):
         self.queue = deque()
 
-    def enqueue(self, data):
-        self.queue.append(data)
+    def add_customer(self, name, service_type):
+        customer = Customer(name, service_type)
+        self.queue.append(customer)
+        print(f"{customer.name} ({customer.service_type}) entered at {customer.entry_time}.")
 
-    def dequeue(self):
-        if not self.is_empty():
-            return self.queue.popleft()
-        return "Queue is empty"
-    
-    def is_empty(self):
-        return len(self.queue) == 0
-    
-    def size(self):
-        return len(self.queue)
-    
-q= Queue()
-q.enqueue(5)
-q.enqueue(15)
-print(q.dequeue())
+    def serve_customer(self):
+        if self.queue:
+            customer = self.queue.popleft()
+            print(f"Serving {customer.name} ({customer.service_type})...")
+            time.sleep(1)  
+            print(f"{customer.name} has completed the service and left the bank.")
+        else:
+            print("No customers in the queue.")
+
+bank = BankQueue()
+
+bank.add_customer("Kunal", "Deposit")
+bank.add_customer("Jatin", "Withdrawal")
+bank.add_customer("Kuldeep", "Deposit")
+bank.add_customer("Vishnu", "Withdrawal")
+bank.add_customer("Abhishek", "Deposit")
+
+print("\n--- Serving Customers ---\n")
+
+while bank.queue:
+    bank.serve_customer()
